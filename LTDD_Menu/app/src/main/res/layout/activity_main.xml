@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:text="Đặt món ăn ủa bạn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza hut"
+            android:textSize="24sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#669900">
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/cb_themNam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thêm nấm"
+                    android:checked="true"/>
+                <CheckBox
+                    android:id="@+id/cb_themPM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thêm phô mai"/>
+                <CheckBox
+                    android:id="@+id/cb_themXiuMai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thêm xíu mại"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Số lượng Pizza"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btn_TruSLPizza"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:text="-"
+                        android:textSize="34dp"/>
+                    <TextView
+                        android:id="@+id/tvSLPizza"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:background="#fff"
+                        android:textSize="34dp"
+                        android:text="0"
+                        android:textAlignment="center"/>
+                    <Button
+                        android:id="@+id/btn_CongSLPizza"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:text="+"
+                        android:textSize="34dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#669900">
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioGroup
+                        android:id="@+id/rg_Loai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/rb_PzGaBBQ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pizza Ga BBQ"/>
+                        <RadioButton
+                            android:id="@+id/rb_PzGaHawaii"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pizza Hawaii"/>
+                        <RadioButton
+                            android:id="@+id/rb_PzMD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pizza mac dinh"
+                            android:checked="true"/>
+                    </RadioGroup>
+                    <RadioGroup
+                        android:id="@+id/rg_KichThuoc"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rd_Lon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kich co lon"/>
+                        <RadioButton
+                            android:id="@+id/rb_Vua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kich co vua"/>
+                        <RadioButton
+                            android:id="@+id/rb_Nho"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kich co trung nho"
+                            android:checked="true"/>
+                    </RadioGroup>
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trà sữa"
+            android:textSize="24sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#669900">
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/cb_ThemTC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thêm chân trâu"
+                    android:checked="true"/>
+                <CheckBox
+                    android:id="@+id/cb_ThemThach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thêm thạch"/>
+                <CheckBox
+                    android:id="@+id/cb_ThemPudding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thêm pudding"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#669900">
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Số lượng trà sữa"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btn_TruSLTS"
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:text="-"
+                            android:textSize="34dp"/>
+                        <TextView
+                            android:id="@+id/tv_SLTS"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:background="#fff"
+                            android:textSize="34dp"
+                            android:text="0"
+                            android:textAlignment="center"/>
+                        <Button
+                            android:id="@+id/btn_CongSLTS"
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:text="+"
+                            android:textSize="34dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã giảm giá: "/>
+            <EditText
+                android:id="@+id/edt_MaGG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="              "
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_SoTienGG"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Số tền được giảm giá: "
+                android:textSize="24dp"/>
+            <TextView
+                android:id="@+id/tv_SoTongTien"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Tôngr số tiền phải trả: "
+                android:textSize="24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_DatHang"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Đặt hàng ngay"/>
+            <Button
+                android:id="@+id/btn_LamLai"
+                android:layout_marginLeft="20dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Làm lại"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

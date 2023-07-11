@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <Button
+        android:id="@+id/btnAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAlert"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="32dp"
+        android:text="Alert Dialog"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlert"
+        tools:layout_editor_absoluteX="83dp" />
+
+    <Button
+        android:id="@+id/btnTraditionalList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAlert"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="32dp"
+        android:text="Traditional List"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlert"
+        tools:layout_editor_absoluteX="83dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

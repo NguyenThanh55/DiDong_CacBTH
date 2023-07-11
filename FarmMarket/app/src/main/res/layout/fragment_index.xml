@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IndexFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_menu_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/white"
+                android:padding="10dp"
+                android:text="Trang chủ"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/btn_menu_handbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/white"
+                android:padding="10dp"
+                android:text="Cẩm nang"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/btn_menu_promotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/white"
+                android:padding="10dp"
+                android:text="Khuyến mãi"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/white"
+                android:padding="10dp"
+                android:text="Bán chạy"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/white"
+                android:padding="10dp"
+                android:text="Trang chủ"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainer"
+            android:name="com.example.farmmarket.MenuIndexFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/background_cat2" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
